@@ -1,0 +1,8 @@
+# Bundle patch for dsh-workspace-sessions-first.
+#
+# Installing the package through the official CLI appends this bundle to the
+# profile's stack, and the profile boot merges this row like any other patch
+# entry. Nothing else needs editing in the profile.
+- insert:
+    - id: workspace-sessions-first
+      name: 'dsh-workspace-sessions-first'

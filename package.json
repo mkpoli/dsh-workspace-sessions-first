@@ -1,0 +1,45 @@
+{
+  "name": "dsh-workspace-sessions-first",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness sidebar: in Workspace Tree, a Workspace's own Sessions render above its nested Workspace folders.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "workspace-tree"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkpoli/dsh-workspace-sessions-first.git"
+  },
+  "homepage": "https://github.com/mkpoli/dsh-workspace-sessions-first#readme",
+  "bugs": {
+    "url": "https://github.com/mkpoli/dsh-workspace-sessions-first/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "manifestVersion": 1
+  }
+}
